@@ -11,4 +11,4 @@ def my_collect(array)
   new_array
 end
 
-my_collect(collect) { |e| e.upcase }
+my_collect(" ") { |e| e.upcase }
