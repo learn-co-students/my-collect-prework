@@ -1,10 +1,10 @@
+
 def my_collect(array)
   i = 0
-  newArray = []
-  while i < array.size
-    yield array[i]
-    newArray.push(array[i])
-    i+=1
+  newArray =[]
+  while counter < array.length
+    newArray.push(yield array[i])
+    i = i + 1
   end
-  return newArray
+  newArray
 end
