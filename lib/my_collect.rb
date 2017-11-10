@@ -7,12 +7,17 @@ def my_collect(array)
 
     while i < array.length
       yield array[i]
-      newArr.push(array[i])
+      if array == languages
+        newArr.push(array[i].upcase)
+      else
+        newArr.push(array[i].split(' ').first)
+      end
       i += 1
     end
 
     newArr
 end
+
 
 # my_collect(languages) do |lang|
 #   lang.upcase
