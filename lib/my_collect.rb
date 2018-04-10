@@ -4,7 +4,7 @@ def my_collect(collection) # put argument(s) here
   new_collection = []
 
   while i < collection.length
-    new_collection.push(yield collection[i])
+    new_collection << yield(collection[i])
     i += 1
   end
 
