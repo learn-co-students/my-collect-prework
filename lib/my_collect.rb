@@ -7,3 +7,5 @@ def my_collect(array)
   end
   new_array
 end
+
+#please review this! im not confident you understand the power of 'yield'
