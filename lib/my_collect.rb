@@ -8,17 +8,19 @@ def my_collect(array)
     new_collect.push yield (array[i])
     i += 1
   end
-
 new_collect
 end
-student = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
-my_collect(student) do [name]
-  name.split(" ").first
-end
 
-collection =["ruby", "javascript", "python", "objective-c"]
-
-my_collect(collection) do |lang|
-  lang.upcase
-end
+# end
+# student = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+#
+# my_collect(student) do [name]
+#   name.split(" ").first
+# end
+#
+# collection =["ruby", "javascript", "python", "objective-c"]
+#
+# my_collect(collection) do |lang|
+#   lang.upcase
+# end
