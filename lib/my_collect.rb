@@ -1,2 +1,13 @@
+def my_collect(collection)
 
+  i = 0
+  new_collection = []
 
+  while i < collection.length
+    new_item = yield(collection[i])
+    new_collection << new_item
+    i += 1
+
+  end
+  new_collection
+end
